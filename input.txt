@@ -1,0 +1,19 @@
+1
+CFolder Folder1 VFSD:
+CFile file1.txt 100 VFSD:\Folder1 
+DisplayDiskStructure
+DisplayDiskStatus
+CFolder Folder2 VFSD:\Folder1
+CFile file2.txt 2000 VFSD:\Folder1\Folder2 
+DisplayDiskStructure
+DisplayDiskStatus
+DeleteFile VFSD:\Folder1\Folder2\file2.txt
+DisplayDiskStructure
+DisplayDiskStatus
+CFile file3.txt 3000 VFSD:\Folder1\Folder2
+DisplayDiskStructure
+DisplayDiskStatus
+DeleteFolder Folder2 VFSD:\Folder1
+DisplayDiskStructure
+DisplayDiskStatus
+Exit
